@@ -1,0 +1,6 @@
+apiVersion: kuttl.dev/v1beta1
+kind: TestStep
+commands:
+  - script: chmod u+x ./run-rally.sh && ./run-rally.sh
+    timeout: 100000
+    ignoredFailure: false

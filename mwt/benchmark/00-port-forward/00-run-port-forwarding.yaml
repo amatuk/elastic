@@ -1,0 +1,6 @@
+apiVersion: kuttl.dev/v1beta1
+kind: TestStep
+commands:
+  - command: kubectl  -n kubeaddons-enterprise port-forward deployment/elasticsearch-ext-kubeaddons-client 9200
+    #background: true
+    timeout: 100000 
